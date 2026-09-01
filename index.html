@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pracownia JUKA — pracownia krawiecka, Konin</title>
+<meta name="description" content="Przeróbki i szycie na miarę. Pracownia krawiecka JUKA, Konin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">Pracownia<br><span class="brand-sub">JUKA</span></a>
+    <nav class="nav">
+      <a href="#uslugi">Usługi</a>
+      <a href="#o-nas">O zakładzie</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="hero-eyebrow">Pracownia krawiecka w Koninie</p>
+      <h1>Ubranie uszyte<br>na Ciebie</h1>
+      <p class="hero-lede">
+        Przeróbki, poprawki, szycie na miarę — z pomysłem, dbałością
+        o detal i odrobiną entuzjazmu, którego nie da się podrobić.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="tel:+48666858530">Zadzwoń: 666 858 530</a>
+        <a class="button button-ghost" href="#kontakt">Zobacz adres i godziny</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stitch-divider" aria-hidden="true"></div>
+
+  <section id="uslugi" class="services">
+    <div class="wrap">
+      <h2>Usługi i orientacyjne ceny</h2>
+      <p class="section-note">Ostateczna cena zależy od stanu i rodzaju obuwia — wycena zawsze na miejscu, bez zobowiązań.</p>
+
+      <ul class="service-list">
+        <li class="service-item">
+          <span class="service-name">Skracanie i zwężanie spodni</span>
+          <span class="service-line" aria-hidden="true"></span>
+          <span class="service-price">od [XX] zł</span>
+        </li>
+        <li class="service-item">
+          <span class="service-name">Przeróbka sukni i garniturów</span>
+          <span class="service-line" aria-hidden="true"></span>
+          <span class="service-price">od [XX] zł</span>
+        </li>
+        <li class="service-item">
+          <span class="service-name">Wymiana zamka błyskawicznego</span>
+          <span class="service-line" aria-hidden="true"></span>
+          <span class="service-price">od [XX] zł</span>
+        </li>
+        <li class="service-item">
+          <span class="service-name">Cerowanie i drobne naprawy</span>
+          <span class="service-line" aria-hidden="true"></span>
+          <span class="service-price">od [XX] zł</span>
+        </li>
+        <li class="service-item">
+          <span class="service-name">Szycie na miarę</span>
+          <span class="service-line" aria-hidden="true"></span>
+          <span class="service-price">wycena indywidualna</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="stitch-divider" aria-hidden="true"></div>
+
+  <section id="o-nas" class="about">
+    <div class="wrap about-grid">
+      <div class="about-photo-frame">
+        <!-- Podmień na prawdziwe zdjęcie zakładu / właścicielki -->
+        <div class="about-photo-placeholder">[Zdjęcie zakładu]</div>
+      </div>
+      <div class="about-text">
+        <h2>O pracowni</h2>
+        <p>
+          Pracownia JUKA to połączenie pomysłowości, pasji i pracy z igłą
+          w ręku. [Tu dodaj zdanie-dwa: od kiedy działasz, co lubisz
+          najbardziej szyć/przerabiać, dla kogo pracujesz.] Krótko i konkretnie —
+          ludzie szukają krawcowej, nie eseju.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="stitch-divider" aria-hidden="true"></div>
+
+  <section id="kontakt" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Kontakt</h2>
+        <dl class="contact-list">
+          <div class="contact-row">
+            <dt>Adres</dt>
+            <dd>ul. Powstańców Wielkopolskich 16<br>62-510 Konin</dd>
+          </div>
+          <div class="contact-row">
+            <dt>Telefon</dt>
+            <dd><a href="tel:+48666858530">666 858 530</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>Godziny otwarcia</dt>
+            <dd>
+              Pon–Pt: [00:00–00:00]<br>
+              Sobota: [00:00–00:00]<br>
+              Niedziela: nieczynne
+            </dd>
+          </div>
+        </dl>
+      </div>
+      <div class="map-frame">
+        <!-- Miejsce na mapę (np. wstawioną z Google Maps) lub kolejne zdjęcie -->
+        <div class="map-placeholder">[Mapa dojazdu]</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Pracownia JUKA</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

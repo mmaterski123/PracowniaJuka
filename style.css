@@ -1,0 +1,247 @@
+/* ---------- Tokeny (zmień tu kolory / czcionki dla całej strony) ---------- */
+:root {
+  --parchment: #EDE4D3;
+  --parchment-dim: #E3D8C2;
+  --espresso: #3B2A20;
+  --brass: #A67C3D;
+  --brass-dark: #8A6530;
+  --muted: #6B5B4D;
+  --line: #C9B896;
+
+  --font-display: "Bitter", Georgia, serif;
+  --font-body: "Work Sans", -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--parchment);
+  color: var(--espresso);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+  color: var(--espresso);
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: clamp(2.1rem, 5vw, 3.2rem); font-weight: 700; }
+h2 { font-size: clamp(1.5rem, 3vw, 1.9rem); font-weight: 600; }
+
+a { color: inherit; }
+
+/* ---------- Nagłówek strony ---------- */
+.site-header {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: var(--espresso);
+}
+
+.brand-sub {
+  color: var(--brass-dark);
+}
+
+.nav { display: flex; gap: 28px; }
+
+.nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--muted);
+  border-bottom: 1px solid transparent;
+}
+
+.nav a:hover { border-bottom-color: var(--brass); }
+
+/* ---------- Sekcja "stitch divider" — motyw przewodni strony ---------- */
+.stitch-divider {
+  height: 1px;
+  max-width: 880px;
+  margin: 0 auto;
+  border-top: 2px dashed var(--line);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 84px 0 64px;
+}
+
+.hero-eyebrow {
+  font-size: 0.95rem;
+  color: var(--brass-dark);
+  margin: 0 0 14px;
+}
+
+.hero-lede {
+  max-width: 46ch;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 26px;
+  background: var(--espresso);
+  color: var(--parchment);
+  text-decoration: none;
+  font-size: 0.98rem;
+  border-radius: 2px;
+}
+
+.button:hover { background: #2A1D16; }
+
+.button-ghost {
+  background: transparent;
+  color: var(--espresso);
+  border: 1px solid var(--espresso);
+}
+
+.button-ghost:hover { background: rgba(59,42,32,0.06); }
+
+/* ---------- Usługi ---------- */
+.services { padding: 64px 0; }
+
+.section-note {
+  color: var(--muted);
+  margin-top: -6px;
+  max-width: 55ch;
+}
+
+.service-list {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+}
+
+.service-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.service-item:first-child { border-top: 1px dashed var(--line); }
+
+.service-name { font-size: 1.02rem; }
+
+.service-line {
+  flex: 1;
+  border-bottom: 1px dotted var(--line);
+  margin-bottom: 5px;
+}
+
+.service-price {
+  font-family: var(--font-display);
+  color: var(--brass-dark);
+  white-space: nowrap;
+}
+
+/* ---------- O zakładzie ---------- */
+.about { padding: 64px 0; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-photo-placeholder,
+.map-placeholder {
+  background: var(--parchment-dim);
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 16px;
+}
+
+.about-text p { color: var(--muted); }
+
+/* ---------- Kontakt ---------- */
+.contact { padding: 64px 0 84px; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-list { margin: 24px 0 0; }
+
+.contact-row {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--line);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+}
+
+.contact-row dt {
+  color: var(--brass-dark);
+  font-size: 0.9rem;
+}
+
+.contact-row dd { margin: 0; }
+
+.contact-row a { text-decoration: none; border-bottom: 1px solid var(--line); }
+
+/* ---------- Stopka ---------- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* ---------- Responsywność ---------- */
+@media (max-width: 640px) {
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .nav { gap: 18px; }
+}
