@@ -3,143 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pracownia JUKA — pracownia krawiecka, Konin</title>
-<meta name="description" content="Przeróbki i szycie na miarę. Pracownia krawiecka JUKA, Konin.">
+<title>Pracownia JUKA — kontakt</title>
+<meta name="description" content="Pracownia krawiecka JUKA, Konin — dane kontaktowe.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --parchment: #EDE4D3;
+    --espresso: #3B2A20;
+    --brass: #A67C3D;
+    --brass-dark: #8A6530;
+    --muted: #6B5B4D;
+    --line: #C9B896;
+    --font-display: "Bitter", Georgia, serif;
+    --font-body: "Work Sans", -apple-system, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100svh;
+    background: var(--parchment);
+    color: var(--espresso);
+    font-family: var(--font-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .card {
+    display: flex;
+    align-items: stretch;
+    max-width: 780px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid var(--line);
+    overflow: hidden;
+  }
+
+  .card-logo {
+    flex: 0 0 42%;
+    background: #000;
+  }
+
+  .card-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-content {
+    flex: 1;
+    padding: 44px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .eyebrow {
+    font-size: 0.9rem;
+    color: var(--brass-dark);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    margin: 0 0 18px;
+    line-height: 1.2;
+  }
+
+  .stitch {
+    border-top: 2px dashed var(--line);
+    margin: 0 0 22px;
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+    font-size: 1.02rem;
+  }
+
+  .contact-list li:last-child { border-bottom: none; }
+
+  .contact-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--brass-dark);
+    margin-bottom: 2px;
+  }
+
+  .contact-list a {
+    color: var(--espresso);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .contact-list a:hover { border-bottom-color: var(--brass); }
+
+  @media (max-width: 560px) {
+    .card { flex-direction: column; }
+    .card-logo { flex: 0 0 auto; aspect-ratio: 1 / 1; }
+    .card-content { padding: 32px 26px; }
+  }
+</style>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#top" class="brand">Pracownia<br><span class="brand-sub">JUKA</span></a>
-    <nav class="nav">
-      <a href="#uslugi">Usługi</a>
-      <a href="#o-nas">O zakładzie</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </div>
-</header>
-
-<main id="top">
-
-  <section class="hero">
-    <div class="wrap">
-      <p class="hero-eyebrow">Pracownia krawiecka w Koninie</p>
-      <h1>Ubranie uszyte<br>na Ciebie</h1>
-      <p class="hero-lede">
-        Przeróbki, poprawki, szycie na miarę — z pomysłem, dbałością
-        o detal i odrobiną entuzjazmu, którego nie da się podrobić.
-      </p>
-      <div class="hero-actions">
-        <a class="button" href="tel:+48666858530">Zadzwoń: 666 858 530</a>
-        <a class="button button-ghost" href="#kontakt">Zobacz adres i godziny</a>
-      </div>
+  <div class="card">
+    <div class="card-logo">
+      <img src="assets/juka_logo.jpg" alt="Logo Pracownia JUKA">
     </div>
-  </section>
-
-  <div class="stitch-divider" aria-hidden="true"></div>
-
-  <section id="uslugi" class="services">
-    <div class="wrap">
-      <h2>Usługi i orientacyjne ceny</h2>
-      <p class="section-note">Ostateczna cena zależy od stanu i rodzaju obuwia — wycena zawsze na miejscu, bez zobowiązań.</p>
-
-      <ul class="service-list">
-        <li class="service-item">
-          <span class="service-name">Skracanie i zwężanie spodni</span>
-          <span class="service-line" aria-hidden="true"></span>
-          <span class="service-price">od [XX] zł</span>
+    <div class="card-content">
+      <p class="eyebrow">Pracownia krawiecka · Konin</p>
+      <h1>Strona w przygotowaniu.<br>Zapraszamy do kontaktu:</h1>
+      <div class="stitch"></div>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Telefon</span>
+          <a href="tel:+48666858530">666 858 530</a>
         </li>
-        <li class="service-item">
-          <span class="service-name">Przeróbka sukni i garniturów</span>
-          <span class="service-line" aria-hidden="true"></span>
-          <span class="service-price">od [XX] zł</span>
+        <li>
+          <span class="contact-label">E-mail</span>
+          <a href="mailto:pracownia.juka@wp.pl">pracownia.juka@wp.pl</a>
         </li>
-        <li class="service-item">
-          <span class="service-name">Wymiana zamka błyskawicznego</span>
-          <span class="service-line" aria-hidden="true"></span>
-          <span class="service-price">od [XX] zł</span>
-        </li>
-        <li class="service-item">
-          <span class="service-name">Cerowanie i drobne naprawy</span>
-          <span class="service-line" aria-hidden="true"></span>
-          <span class="service-price">od [XX] zł</span>
-        </li>
-        <li class="service-item">
-          <span class="service-name">Szycie na miarę</span>
-          <span class="service-line" aria-hidden="true"></span>
-          <span class="service-price">wycena indywidualna</span>
+        <li>
+          <span class="contact-label">Facebook</span>
+          <a href="https://www.facebook.com/pracownia.juka" target="_blank" rel="noopener">facebook.com/pracownia.juka</a>
         </li>
       </ul>
     </div>
-  </section>
-
-  <div class="stitch-divider" aria-hidden="true"></div>
-
-  <section id="o-nas" class="about">
-    <div class="wrap about-grid">
-      <div class="about-photo-frame">
-        <!-- Podmień na prawdziwe zdjęcie zakładu / właścicielki -->
-        <div class="about-photo-placeholder">[Zdjęcie zakładu]</div>
-      </div>
-      <div class="about-text">
-        <h2>O pracowni</h2>
-        <p>
-          Pracownia JUKA to połączenie pomysłowości, pasji i pracy z igłą
-          w ręku. [Tu dodaj zdanie-dwa: od kiedy działasz, co lubisz
-          najbardziej szyć/przerabiać, dla kogo pracujesz.] Krótko i konkretnie —
-          ludzie szukają krawcowej, nie eseju.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <div class="stitch-divider" aria-hidden="true"></div>
-
-  <section id="kontakt" class="contact">
-    <div class="wrap contact-grid">
-      <div>
-        <h2>Kontakt</h2>
-        <dl class="contact-list">
-          <div class="contact-row">
-            <dt>Adres</dt>
-            <dd>ul. Powstańców Wielkopolskich 16<br>62-510 Konin</dd>
-          </div>
-          <div class="contact-row">
-            <dt>Telefon</dt>
-            <dd><a href="tel:+48666858530">666 858 530</a></dd>
-          </div>
-          <div class="contact-row">
-            <dt>Godziny otwarcia</dt>
-            <dd>
-              Pon–Pt: [00:00–00:00]<br>
-              Sobota: [00:00–00:00]<br>
-              Niedziela: nieczynne
-            </dd>
-          </div>
-        </dl>
-      </div>
-      <div class="map-frame">
-        <!-- Miejsce na mapę (np. wstawioną z Google Maps) lub kolejne zdjęcie -->
-        <div class="map-placeholder">[Mapa dojazdu]</div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p>© <span id="year"></span> Pracownia JUKA</p>
   </div>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
